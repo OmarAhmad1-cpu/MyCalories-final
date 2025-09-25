@@ -24,7 +24,7 @@
   margin-bottom: 18px;
   text-align: center;
 }
-.about-main-section p { /* اذا بدي اعدل عالفقرة الكبيرة */
+.about-main-section p {
   font-size: 1.13rem;
   color: #0b0a0a;
   line-height: 1.7;
@@ -65,23 +65,23 @@ body.dark-mode {
   border-color: #333a40 !important;
 }
 
-/* About Page Styles */
-<style>
-/* تأكد أن الهيدر مثبت فوق الخلفية */
+/* ---- NAVBAR OVER HERO (مشترك لكل الصفحات) ---- */
 .tm-site-header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* يخليه فوق كل شيء */
-  background: rgba(0, 0, 0, 0.6); /* خلفية سوداء شبه شفافة */
+  z-index: 1000;                /* فوق كل العناصر */
+  background: rgba(0, 0, 0, 0.6); /* خلفية سوداء شفافة */
 }
-
-/* نصوص النافبار */
 .tm-site-header .nav-link {
-  color: white !important;
+  color: #fff !important;
 }
-
 .tm-site-header .nav-link:hover {
   color: #f1f1f1 !important;
 }
-</style>
+
+/* لو في فراغ أبيض فوق، نتأكد أن الـ hero يبدأ من أعلى الصفحة */
+.tm-welcome-container {
+  margin-top: 0 !important;
+  padding-top: 64px; /* مساحة تحت النافبار */
+}
