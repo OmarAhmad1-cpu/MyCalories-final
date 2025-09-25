@@ -153,4 +153,35 @@ body.dark-mode {
   margin-top: 0 !important;
   padding-top: 64px;
 }
+/* 1) reset افتراضي يمنع الشريط الأبيض حول الصفحة */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 2) خلي صورة الهيرو تبلّش من أعلى الصفحة بلا فراغ */
+#tm-video-container img {
+  display: block;       /* يشيل الـ 4px فراغ تحت الصور */
+  width: 100%;
+  height: auto;
+}
+
+/* 3) خلي النافبار فوق الهيرو فعلياً */
+.tm-site-header {
+  position: absolute !important;  /* فوق الهيرو مباشرة */
+  top: 0; left: 0; right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(0,0,0,0.6) !important; /* خلفية سوداء شفافة */
+  padding: 10px 0;
+}
+.tm-site-header .nav-link { color: #fff !important; }
+.tm-site-header .nav-link:hover { color: #f1f1f1 !important; }
+
+/* 4) اعمل مسافة كفاية تحت النافبار عشان النص ما يتغطى */
+.tm-welcome-container {
+  margin-top: 0 !important;
+  padding-top: 80px; /* زوّد/قلّل حسب ارتفاع النافبار */
+}
+
 
