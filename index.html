@@ -1,6 +1,5 @@
 <!DOCTYPE html> <!--page type is html -->
 <html lang="en"> <!--language is english -->
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- ملفاتك المحلية (لاحظ: بدون / في البداية) -->
+  <!-- ملفاتك المحلية (بدون / أو ../ في البداية) -->
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="video.css">
   <link rel="stylesheet" href="templatemoo-video-catalog.css"><!-- عدّل الاسم لو مختلف عندك -->
@@ -23,222 +22,202 @@
   <script src="video.js" defer></script>
 </head>
 
-
 <body class="page-bg"><!--اسم الكلاس -->
-        <div class="tm-page-wrap mx-auto">                      <!--من 16 ل 54  عشان الموقع يفتح عكل الاجهزة-->
-        <div class="position-relative">
-            <div class="position-absolute tm-site-header">
-                <div class="container-fluid position-relative">
-                    <div class="row">
-                        <div class="col-7 col-md-4">
-                        </div>
-                        <div class="col-5 col-md-8 ml-auto mr-0">
-                            <div class="tm-site-nav">
-                                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
-                                    <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed"
-                                        type="button" data-toggle="collapse" data-target="#navbar-nav"
-                                        aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span>
-                                            <i class="fas fa-bars tm-menu-closed-icon"></i>
-                                            <i class="fas fa-times tm-menu-opened-icon"></i>
-                                        </span>
-                                    </button>
-                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
-                                        <ul class="navbar-nav text-uppercase" style="align-items: center;">
-                                            <li class="nav-item active">
-                                                <a class="nav-link tm-nav-link" href="home.html">Home <span
-                                                        class="sr-only">(current)</span></a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="../videos/video.html">Videos</a> <!--link to vedio page in the bar-->
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="../about/about.html">About</a><!--link to about page in bar-->
-                                            </li>
-                                            <li class="nav-item"><!-- ايقونة الثييم بالبار -->
-                                                <button id="theme-toggle" class="btn btn-link nav-link"><!--بيستدعي من الجافا فنكشن الثييم -->
-                                                    <span id="theme-toggle-icon" class="fas fa-moon"></span><!--ايقونة القمر والشمس-->
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="tm-page-wrap mx-auto"><!-- من 16 ل 54  عشان الموقع يفتح عكل الاجهزة -->
+    <div class="position-relative">
+      <div class="position-absolute tm-site-header">
+        <div class="container-fluid position-relative">
+          <div class="row">
+            <div class="col-7 col-md-4"></div>
+            <div class="col-5 col-md-8 ml-auto mr-0">
+              <div class="tm-site-nav">
+                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                  <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed"
+                          type="button" data-toggle="collapse" data-target="#navbar-nav"
+                          aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                      <i class="fas fa-bars tm-menu-closed-icon"></i>
+                      <i class="fas fa-times tm-menu-opened-icon"></i>
+                    </span>
+                  </button>
+                  <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                    <ul class="navbar-nav text-uppercase" style="align-items: center;">
+                      <li class="nav-item active">
+                        <a class="nav-link tm-nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="video.html">Videos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item"><!-- ايقونة الثييم بالبار -->
+                        <button id="theme-toggle" class="btn btn-link nav-link">
+                          <span id="theme-toggle-icon" class="fas fa-moon"></span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
             </div>
-            <div class="tm-welcome-container text-center text-white"><!--font type & color --> 
-                <div class="tm-welcome-container-inner"> <!--بعطي الكلاس اسم عشان اقدر اعدل عليه بصفحة السي اس اس-->
-                    <p class="tm-welcome-text mb-1 text-white">Calculate your daily calories and BMI easily!</p>
-                    <p class="tm-welcome-text mb-5 text-white">Find out how many nutrients your body needs and plan a
-                        healthier lifestyle.</p>
-                    <a href="#Calories" class="btn tm-btn-animate tm-btn-cta tm-icon-down"> <!-- كبسة الي بتوديك لجدول الحسابات-->
-                        <span>Start Calculating</span> <!--اسم الكبسة -->
-                    </a>
-                </div>
-            </div>
-
-
-            <div id="tm-video-container">  <!--من التمليت جاهز مالو دور واذا مسحناه الخلفية تصميمها بيخرب -->
-               
-                <img src="../template/img/back img.jpg" alt="">   <!--صورة خلفية الصفحة -->
-            </div>
+          </div>
         </div>
+      </div>
 
-                                       <!--من 78 ل124 هاد الجدول تبع الحسابات -->
-        <main class="container py-5" id="Calories"> <!--conitiner & py-5 r from templete it self-->
-            <div class="card card-custom mx-auto" style="background: #F4F4F4;">
-                <div class="card-body"> <!--بيخلي النصوص مرتبة داخل الجدول-->
-                    <h2 class="card-title text-center mb-4">Calorie & BMI Calculator</h2><!--عنوان جدول الحسابات-->
+      <div class="tm-welcome-container text-center text-white"><!--font type & color -->
+        <div class="tm-welcome-container-inner">
+          <p class="tm-welcome-text mb-1 text-white">Calculate your daily calories and BMI easily!</p>
+          <p class="tm-welcome-text mb-5 text-white">Find out how many nutrients your body needs and plan a healthier lifestyle.</p>
+          <a href="#Calories" class="btn tm-btn-animate tm-btn-cta tm-icon-down">
+            <span>Start Calculating</span>
+          </a>
+        </div>
+      </div>
 
-                    <form id="calorieForm" name="calorieForm" novalidate onsubmit="return calculateCalories(this)"><!--بس تضغط علكبسة بيستدعي الفنكشن الي فيه المعادلات من ملف الجافا-->
-                        <div class="row g-3 mb-3"> <!--من التمبليت جاهز لغايات الترتيب-->
-                            <div class="col-md-4">
-                                <label for="weight" class="form-label">Weight (kg)</label><!--خانة الوزن بالجدول-->
-                                <input name="weight" type="number" class="form-control" step="0.1" required><!--عشان يستقبل من اليوزر الوزن تبعو,مسموح كسور بالرقم-->
-                            </div>
-                            <div class="col-md-4">
-                                <label for="height" class="form-label">Height (cm)</label><!--خانة الطول-->
-                                <input name="height" type="number" class="form-control"  step="0.1" required><!--بستقبل من اليوزر الطول تبعو ومسموح كسور-->
-                            </div>
-                            <div class="col-md-4">
-                                <label for="age" class="form-label">Age (years)</label><!---خانة العمر-->
-                                <input name="age" type="number" class="form-control"  required><!--ممنوع كسور بالعمر, بستقبل من اليوزر العمر تبعو-->
-                            </div>
-                        </div>
+      <div id="tm-video-container"><!-- من التمليت -->
+        <!-- صورة الخلفية كانت ../template/img/back img.jpg -->
+        <img src="back img.jpg" alt="Background">
+      </div>
+    </div>
 
-                        <div class="row g-3 mb-3">
-                            <div class="col-md-4">
-                                <label for="gender" class="form-label">Gender</label><!--خانة الجنس ذكر ولا انثى-->
-                                 <br>
-                                <select name="gender" class="form-select" required> <!--السيليكت تستخدم لاظهار قائمة اختار منها-->
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
-                            </div>
+    <!-- من 78 ل124 هاد الجدول تبع الحسابات -->
+    <main class="container py-5" id="Calories">
+      <div class="card card-custom mx-auto" style="background: #F4F4F4;">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-4">Calorie & BMI Calculator</h2>
 
-                            <div class="col-md-4">
-                                <label for="activity" class="form-label">Activity level</label> <!--خانة مستوى النشاط -->
-                                <select name="activity" class="form-select" required> <!--السيليكت تستخدم لاظهار قائمة اختار منها-->
-                                    <option value="1.2">Sedentary</option>
-                                    <option value="1.375">Light</option>
-                                    <option value="1.55">Moderate</option>
-                                    <option value="1.725">Very active</option>
-                                    <option value="1.9">Extra active</option>
-                                </select>
-                            </div>
-                                <div class="col-md-4">
-                                <label for="wantTo" class="form-label">Want To</label> <!--خانة شو الهدف تبع اليوزر-->
-                                <select name="wantTo" class="form-select" required> <!--السيليكت تستخدم لاظهار قائمة اختار منها-->
-                                    <option value="1">Just Calcualtion</option>
-                                    <option value="2">Gain Weight</option>
-                                    <option value="3">Loss Weight</option>
-
-                                </select>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary w-100">Calculate</button> <!--كبسة الحساب-->
-                    </form> <!--button is used to create كبسة-->
-
-                    <!-- Result Card -->
-                    <div id="results" class="result-card mt-4 mx-auto" style="display:none;"></div>
-                    <!--بتكون فاضية ولمن نضغط حساب بتبعى فيها نتائج الحسابات الي بكود الجافا-->
-                </div>
+          <form id="calorieForm" name="calorieForm" novalidate onsubmit="return calculateCalories(this)">
+            <div class="row g-3 mb-3">
+              <div class="col-md-4">
+                <label for="weight" class="form-label">Weight (kg)</label>
+                <input name="weight" type="number" class="form-control" step="0.1" required>
+              </div>
+              <div class="col-md-4">
+                <label for="height" class="form-label">Height (cm)</label>
+                <input name="height" type="number" class="form-control" step="0.1" required>
+              </div>
+              <div class="col-md-4">
+                <label for="age" class="form-label">Age (years)</label>
+                <input name="age" type="number" class="form-control" required>
+              </div>
             </div>
-        </main>
 
+            <div class="row g-3 mb-3">
+              <div class="col-md-4">
+                <label for="gender" class="form-label">Gender</label>
+                <br>
+                <select name="gender" class="form-select" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
 
+              <div class="col-md-4">
+                <label for="activity" class="form-label">Activity level</label>
+                <select name="activity" class="form-select" required>
+                  <option value="1.2">Sedentary</option>
+                  <option value="1.375">Light</option>
+                  <option value="1.55">Moderate</option>
+                  <option value="1.725">Very active</option>
+                  <option value="1.9">Extra active</option>
+                </select>
+              </div>
 
-                                   <!--من 142 ل203 هاد القسم تبع اخصائيين التغذية-->
-        <div class="container-fluid"> <!--fluid عشان يكون بعرض الصفحة كله-->
-            <div class="mx-auto tm-content-container">  <!--جاهزات من التمبليت الي حملناه -->
-                <main>
-                    <div class="row"><!--صف جديد -->
-                        <div class="col-12"><!--عرض كامل برضو جاهز من التمبليت-->
-                            <h2 class="tm-page-title mb-4">Our Famous Nutritionists</h2>
-                        </div>
-                    </div>
+              <div class="col-md-4">
+                <label for="wantTo" class="form-label">Want To</label>
+                <select name="wantTo" class="form-select" required>
+                  <option value="1">Just Calcualtion</option>
+                  <option value="2">Gain Weight</option>
+                  <option value="3">Loss Weight</option>
+                </select>
+              </div>
+            </div>
 
-                  <div class="row tm-catalog-item-list"> <!--row عشان يكونو عصف جديد و الكاتالوج عشان يكونو على شكل بطاقات-->
-                <!-- Card 1 -->
-                  <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item"><!--شغلات جاهزة من التمبليت -->
-                  <div class="position-relative tm-thumbnail-container"><!--عبارة عن اطار للصورة-->
-                  <img src="../template/img/Jad khalil.jpg" alt="Image" class="img-fluid tm-catalog-item-img"><!--صورة اخصائي التغذية-->
-                 </div>
-                 <div class="p-4 tm-bg-gray tm-catalog-item-description"><!--خلفية البطاقة-->
-                  <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Jad khalil</h3><!--اسم اخصائي التغذية-->
+            <button type="submit" class="btn btn-primary w-100">Calculate</button>
+          </form>
+
+          <!-- Result Card -->
+          <div id="results" class="result-card mt-4 mx-auto" style="display:none;"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- من 142 ل203 هاد القسم تبع اخصائيين التغذية -->
+    <div class="container-fluid">
+      <div class="mx-auto tm-content-container">
+        <main>
+          <div class="row">
+            <div class="col-12">
+              <h2 class="tm-page-title mb-4">Our Famous Nutritionists</h2>
+            </div>
+          </div>
+
+          <div class="row tm-catalog-item-list">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div class="position-relative tm-thumbnail-container">
+                <!-- كانت ../template/img/Jad khalil.jpg -->
+                <img src="Jad khalil.jpg" alt="Jad khalil" class="img-fluid tm-catalog-item-img">
+              </div>
+              <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Jad khalil</h3>
                 <p class="tm-catalog-item-text">
-                    Nutritionist specializing in Weight Managment/Sport Nutrition and Online Consultaions.
+                  Nutritionist specializing in Weight Managment/Sport Nutrition and Online Consultaions.
                 </p>
                 <div class="mt-3">
-             <a href="https://www.instagram.com/dietitian.jadkhalil?igsh=cDc5ZmRpdHF3amhs" target="_blank" class="text-danger"><!--الكلاس هاد عشان لون ايقونة الانستا تكون حمرا-->
-          <i class="fab fa-instagram fa-lg"></i><!--ايقونة الانستا -->
-        </a>
-      </div>
-    </div>
-  </div>
-
-             <!-- Card 2 -->
-  <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-    <div class="position-relative tm-thumbnail-container"><!--عبارة عن اطار للصورة-->
-                  <img src="../template/img/Sarah thawabteh.jpg" alt="Image" class="img-fluid tm-catalog-item-img"><!--صورة اخصائي التغذية-->
-                 </div>
-                 <div class="p-4 tm-bg-gray tm-catalog-item-description"><!--لون خلفية البطاقة-->
-                  <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Sarah thawabteh</h3><!--اسم اخصائي التغذية-->
-                <p class="tm-catalog-item-text"><!--وصف اخصائي التغذية-->
-                    International Board Certified Nutritionist.
-                </p>
-                <div class="mt-3">
-             <a href="https://www.instagram.com/nutritionist.sarah0?igsh=MTJ2bWIwbDhlZjFwcw==" target="_blank" class="text-danger">
-          <i class="fab fa-instagram fa-lg"></i><!--ايقونة الانستا -->
-        </a>
-      </div>
-    </div>
-  </div>
-
-               <!-- Card 3 -->
-  <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-    <div class="position-relative tm-thumbnail-container"><!--عبارة عن اطار للصورة-->
-                  <img src="../template/img/Ahmed younes.jpg" alt="Image" class="img-fluid tm-catalog-item-img"><!--صورة اخصائي التغذية-->
-                 </div>
-                 <div class="p-4 tm-bg-gray tm-catalog-item-description"><!--خلفية البطاقة-لون -->
-                  <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Ahmed younes</h3><!--اسم اخصائي التغذية-->
-                <p class="tm-catalog-item-text"><!--وصف اخصائي التغذية-->
-                    Expert nutritionist specializing in weight management, sports nutrition, and personalized online consultations.
-
-                </p>
-                <div class="mt-3">
-             <a href="https://www.instagram.com/ay_nutrition?igsh=MXBhcjY1ZGNuaWo1cg==" target="_blank" class="text-danger">
-          <i class="fab fa-instagram fa-lg"></i><!--ايقونة الانستا -->
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-                </main><!--close cards section-->
-
-                <div class="row mt-5 pt-3"><!--new row-->
-
+                  <a href="https://www.instagram.com/dietitian.jadkhalil?igsh=cDc5ZmRpdHF3amhs" target="_blank" class="text-danger">
+                    <i class="fab fa-instagram fa-lg"></i>
+                  </a>
                 </div>
-
+              </div>
             </div>
-        </div>
 
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div class="position-relative tm-thumbnail-container">
+                <!-- كانت ../template/img/Sarah thawabteh.jpg -->
+                <img src="Sarah thawabteh.jpg" alt="Sarah thawabteh" class="img-fluid tm-catalog-item-img">
+              </div>
+              <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Sarah thawabteh</h3>
+                <p class="tm-catalog-item-text">
+                  International Board Certified Nutritionist.
+                </p>
+                <div class="mt-3">
+                  <a href="https://www.instagram.com/nutritionist.sarah0?igsh=MTJ2bWIwbDhlZjFwcw==" target="_blank" class="text-danger">
+                    <i class="fab fa-instagram fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div class="position-relative tm-thumbnail-container">
+                <!-- كانت ../template/img/Ahmed younes.jpg -->
+                <img src="Ahmed younes.jpg" alt="Ahmed younes" class="img-fluid tm-catalog-item-img">
+              </div>
+              <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Ahmed younes</h3>
+                <p class="tm-catalog-item-text">
+                  Expert nutritionist specializing in weight management, sports nutrition, and personalized online consultations.
+                </p>
+                <div class="mt-3">
+                  <a href="https://www.instagram.com/ay_nutrition?igsh=MXBhcjY1ZGNuaWo1cg==" target="_blank" class="text-danger">
+                    <i class="fab fa-instagram fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main><!-- close cards section -->
+
+        <div class="row mt-5 pt-3"></div>
+      </div>
     </div>
+  </div>
 
-
-        <script src="./home.js"></script><!--link the java script file to html-->
-    <script src="../template/js/jquery-3.4.1.min.js"></script><!--ready library-->
-    <script src="../template/js/bootstrap.min.js"></script><!--bootstrap library-->
-
+  <!-- لا حاجة لتضمين نسخ أخرى من jQuery/Bootstrap أسفل الصفحة لأننا أضفناهم بالأعلى -->
 </body>
-
 </html>
-<!-- rebuild -->
-
-
-
-
