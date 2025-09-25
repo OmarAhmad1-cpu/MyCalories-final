@@ -52,3 +52,24 @@ body.dark-mode {
 	display: block;
 	margin-bottom: 0;
 }
+<style>
+/* تأكد أن الهيدر مثبت فوق الخلفية */
+.tm-site-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* يخليه فوق كل شيء */
+  background: rgba(0, 0, 0, 0.6); /* خلفية سوداء شبه شفافة */
+}
+
+/* نصوص النافبار */
+.tm-site-header .nav-link {
+  color: white !important;
+}
+
+.tm-site-header .nav-link:hover {
+  color: #f1f1f1 !important;
+}
+</style>
+
+
