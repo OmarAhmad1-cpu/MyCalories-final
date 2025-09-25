@@ -110,5 +110,33 @@ html, body {
   margin-top: 0 !important;
   padding-top: 80px; /* زوّد/قلّل حسب ارتفاع النافبار */
 }
+/* ازالة أي فراغات افتراضية */
+html, body { margin: 0; padding: 0; }
 
+/* خليه يطفو فوق الهيرو وشفاف */
+.tm-site-header{
+  position: absolute;      /* فوق الهيرو مباشرة */
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: transparent !important; /* شفّاف */
+}
+
+/* ألوان روابط النافبار */
+.tm-site-header .nav-link{ color:#fff !important; }
+.tm-site-header .nav-link:hover{ color:#f1f1f1 !important; }
+
+/* شيل الفراغ الأبيض بين الهيدر والهيرو */
+.tm-welcome-container{
+  margin: 0 !important;
+  padding: 0 !important;      /* لا padding أبيض */
+  background: transparent !important;
+}
+
+/* اسحب صورة الهيرو للأعلى تحت الهيدر مباشرة */
+#tm-video-container{ margin-top: -64px; }  /* عدّل -64 حسب ارتفاع الهيدر عندك */
+#tm-video-container img{
+  display:block;              /* يشيل فراغ تحت الصور */
+  width:100%;
+  height:auto;
+}
 
