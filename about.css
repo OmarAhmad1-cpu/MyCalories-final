@@ -1,0 +1,67 @@
+/* Navbar alignment and theme toggle button */
+.align-items-center {
+  align-items: center !important;
+}
+.theme-toggle-btn {
+  font-size: 1.3rem;
+  padding: 0 10px;
+  outline: none;
+  box-shadow: none;
+}
+
+/* About main section styles */
+.about-main-section {
+  background: #f4f8fb;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(20,40,80,0.07);
+  padding: 32px 24px;
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+}
+.about-main-section h2 {
+  color: #0b3d91;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.about-main-section p { /* اذا بدي اعدل عالفقرة الكبيرة */
+  font-size: 1.13rem;
+  color: #0b0a0a;
+  line-height: 1.7;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* About description styles (if used elsewhere) */
+.about-description {
+  color: #222;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 18px;
+  max-width: 700px;
+  margin: 30px auto 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #181a1b !important;
+  color: #e0e0e0 !important;
+}
+.dark-mode .about-main-section {
+  background: #23272b !important;
+  color: #e0e0e0 !important;
+  box-shadow: 0 6px 18px rgba(20,40,80,0.13);
+}
+.dark-mode .about-main-section h2 {
+  color: #7abaff !important;
+}
+.dark-mode .about-main-section p,
+.dark-mode .about-description {
+  color: #e0e0e0 !important;
+  background: #23272b !important;
+}
+.dark-mode .about-description {
+  border-color: #333a40 !important;
+}
+/* About Page Styles */

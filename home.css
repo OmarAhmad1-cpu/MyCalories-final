@@ -1,0 +1,126 @@
+/* Dark mode styles */
+body.dark-mode {
+  background: #181a1b !important;
+  color: #e0e0e0 !important;
+}
+.dark-mode .card-custom,
+.dark-mode .result-card {
+  background: #23272b !important;
+  color: #e0e0e0 !important;
+  border-color: #333a40 !important;
+}
+.dark-mode .card-title,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4 {
+  color: #7abaff !important;
+}
+.dark-mode .form-control,
+.dark-mode .form-select {
+  background: #23272b !important;
+  color: #e0e0e0 !important;
+  border-color: #333a40 !important;
+}
+.dark-mode .btn-primary {
+  background-color: #2563eb !important;
+  border-color: #2563eb !important;
+}
+.dark-mode .btn-primary:hover {
+  background-color: #1d4ed8 !important;
+}
+.dark-mode .result-item {
+  border-bottom: 1px solid #333a40 !important;
+}
+.dark-mode .tm-bg-gray {
+  background: #23272b !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .alert-danger {
+  background: #3a1a1a !important;
+  color: #ffb4b4 !important;
+}
+/* Page Background */
+.page-bg {
+  min-height: 100vh;
+  font-family: 'Source Sans Pro', 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* Main Card */
+.card-custom {
+  max-width: 780px;
+  margin-top: 5vh;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+/* Card Title */
+.card-title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #0b3d91;
+}
+
+/* Form Input Styling */
+.form-control, .form-select {
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #cfd9f7;
+  background-color: #ffffff;
+}
+
+/* Button */
+.btn-primary {
+  background-color: #0b63d6;
+  border-color: #0b63d6;
+  padding: 0.65rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #094aad;
+}
+
+/* Result Card */
+.result-card {
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(20, 40, 80, 0.08);
+  text-align: left;
+  border: 1px solid #e6eefc;
+  transition: transform 0.3s ease;
+}
+.result-card.show {
+  transform: translateY(0);
+}
+.result-card h4 {
+  color: #0b3d91;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1.05rem;
+  border-bottom: 1px solid #f0f3ff;
+}
+.result-item:last-child {
+  border-bottom: none;
+}
+.result-item .badge {
+  font-size: 0.85rem;
+  padding: 0.35em 0.6em;
+  border-radius: 8px;
+}
+
+
+.result-item .icon {
+  margin-right: 8px;
+}

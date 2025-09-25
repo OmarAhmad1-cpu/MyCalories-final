@@ -1,0 +1,181 @@
+<!DOCTYPE html> <!--page type is html -->
+<html lang="en"> <!--language is english -->
+
+<head>
+    <meta charset="UTF-8"> <!--بيدعم كل انواع الرموز -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--لتكون الصفحة مناسبة لحجم شاشة الموبايل مثلا-->
+    <title>MyCalories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--مكتبة فيها ايقونات زي تاعت الانستا-->
+    <link rel="stylesheet" href="./video.css"><!--link the css file to html-->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--نوع الخط جبناه من جوجل-->
+    <link rel="stylesheet" href="../template/css/bootstrap.min.css">
+    <!--هدول من التيمبليت نفسو الها علاقة بترتيب الازرار وهيكل الصفحة-->
+    <link rel="stylesheet" href="../template/css/templatemo-video-catalog.css"><!--من التمبليت نفسو -->
+</head>
+
+<body class="page-bg"><!--اسم الكلاس -->
+    <div class="tm-page-wrap mx-auto"> <!--من 20 ل 54  عشان الموقع يفتح عكل الاجهزة-->
+        <div class="position-relative">
+            <div class="position-absolute tm-site-header">
+                <div class="container-fluid position-relative">
+                    <div class="row">
+                        <div class="col-7 col-md-4"><!--تقسيم الصفحة ل اعمدة -->
+                        </div>
+                        <div class="col-5 col-md-8 ml-auto mr-0"><!--تقسيم الصفحة ل اعمدة -->
+                            <div class="tm-site-nav">
+                                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav"><!--القائمة بتتوسع وبتصغر حسب الجهاز  -->
+                                    <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed"
+                                        type="button" data-toggle="collapse" data-target="#navbar-nav"
+                                        aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span>
+                                            <i class="fas fa-bars tm-menu-closed-icon"></i>
+                                            <i class="fas fa-times tm-menu-opened-icon"></i>
+                                        </span>
+                                    </button>
+                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                                        <ul class="navbar-nav text-uppercase" style="align-items: center;">
+                                            <li class="nav-item"><!--الصفحات الموجودة بالشريط الي باعلى الشاشة-->
+                                                <a class="nav-link tm-nav-link" href="../home/home.html">Home</a><!--بربط صفحة الهووم-->
+                                            </li>
+                                            <li class="nav-item active"><!--الصفحة الي انا فيها حاليا لهيك هي active-->
+                                                <a class="nav-link tm-nav-link" href="video.html">Videos <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="../about/about.html">About</a><!--بربط صفحة about-->
+                                            </li>
+                                            <li class="nav-item"><!--زر لتغيير الثيم من ابيض لداكن والعكس-->
+                                                <button id="theme-toggle" class="btn btn-link nav-link"
+                                                    style="font-size: 1.3rem; padding: 0 10px; outline: none; box-shadow: none;"
+                                                    title="Toggle dark/light mode"><!--50 to 52 :link to java & css file to do its function-->
+                                                    <span id="theme-toggle-icon" class="fas fa-moon"></span><!--ايقونة القمر والشمس-->
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-welcome-container text-center text-white"><!--font type & color -->
+                <!--welcome page:55 to 64-->
+                <div class="tm-welcome-container-inner"> <!--بعطي الكلاس اسم عشان اقدر اعدل عليه بصفحة السي اس اس-->
+                    <p class="tm-welcome-text mb-1 text-white">Videos you may find useful</p>
+                    
+                </div>
+            </div>
+
+
+            <div id="tm-video-container"> <!--من التمليت جاهز مالو دور واذا مسحناه الخلفية تصميمها بيخرب -->
+
+                <img src="../template/img/back img.jpg" alt=""> <!--صورة خلفية الصفحة -->
+            </div>
+        </div>
+
+
+
+        <!--من 81 ل160 هاد القسم تبع الفيديوهات-->
+        <div class="container-fluid"> <!--fluid عشان يكون بعرض الصفحة كله-->
+            <div class="mx-auto tm-content-container"> <!--جاهزات من التمبليت الي حملناه -->
+                <main>
+                    <div class="row"><!--صف جديد -->
+                        <div class="col-12"><!--عرض كامل برضو جاهز من التمبليت-->
+                            <h2 class="tm-page-title mb-4">YouTube vedios</h2>
+                        </div>
+                    </div>
+
+                    <div class="row tm-catalog-item-list"> <!-- عشان يكونو عصف جديد و الكاتالوج عشان يكونو على شكل بطاقات-->
+                     
+                        <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item"><!--عشان الكارد يكون مناسب لمختلف الاجهزة-->
+                     <div class="card card-custom h-100"><!--ارتفاع الكارد-->
+                    <div class="tm-thumbnail-container no-gap">
+                     <div class="video-wrap"><!--لتنسيق الفيديو ويشتغل ع جميع الاجهزة-->
+                        <!--iframe is to show the vedio and allow fullscreen and else-->
+                    <iframe 
+                    class="video-iframe"
+                    src="https://www.youtube-nocookie.com/embed/UIPvIYsjfpo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen 
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"><!--الها علاقة بالخصوصية عند تحميل الفيديو-->
+                   </iframe>
+                   </div>
+                    </div>
+
+                  <div class="p-4 tm-bg-gray tm-catalog-item-description no-gap"><!--خلفية رمادية لكارد الفيديو-->
+                 <h3 class="tm-text-primary mb-3 tm-catalog-item-title">30 min full body workout</h3>
+                 </div>
+                 
+          </div>
+        </div>
+                              <!--card2-->
+                 <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item"><!--عشان الكارد يكون مناسب لمختلف الاجهزة-->
+                     <div class="card card-custom h-100"><!--ارتفاع الكارد-->
+                    <div class="tm-thumbnail-container no-gap">
+                     <div class="video-wrap"><!--لتنسيق الفيديو ويشتغل ع جميع الاجهزة-->
+                        <!--iframe is to show the vedio and allow fullscreen and else-->
+                    <iframe
+                    class="video-iframe"
+                    src="https://www.youtube-nocookie.com/embed/onY-vv46tpU"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"><!--الها علاقة بالخصوصية عند تحميل الفيديو-->
+                   </iframe>
+                   </div>
+                    </div>
+
+                  <div class="p-4 tm-bg-gray tm-catalog-item-description no-gap"><!--خلفية رمادية لكارد الفيديو-->
+                 <h3 class="tm-text-primary mb-3 tm-catalog-item-title">30 min cardio</h3>
+                 </div>
+    
+    </div>
+  </div>
+                               <!--card3-->
+         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item"><!--عشان الكارد يكون مناسب لمختلف الاجهزة-->
+                     <div class="card card-custom h-100"><!--ارتفاع الكارد-->
+                    <div class="tm-thumbnail-container no-gap">
+                     <div class="video-wrap"><!--لتنسيق الفيديو ويشتغل ع جميع الاجهزة-->
+                        <!--iframe is to show the vedio and allow fullscreen and else-->
+                    <iframe
+                    class="video-iframe"
+                    src="https://www.youtube-nocookie.com/embed/YwYa9UuEhqg"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"><!--الها علاقة بالخصوصية عند تحميل الفيديو-->
+                   </iframe>
+                   </div>
+                    </div>
+
+                  <div class="p-4 tm-bg-gray tm-catalog-item-description no-gap"><!--خلفية رمادية لكارد الفيديو-->
+                 <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Track your calories</h3>
+                 </div>
+                     </div>
+        
+</div>
+
+
+
+                    </div>
+
+                </main><!--close cards section-->
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./video.js"></script><!--dark/light mode logic-->
+    <script src="../template/js/jquery-3.4.1.min.js"></script><!--ready library-->
+    <script src="../template/js/bootstrap.min.js"></script><!--bootstrap library-->
+
+</body><!--نهاية الbody-->
+
+</html>

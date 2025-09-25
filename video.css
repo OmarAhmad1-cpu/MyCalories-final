@@ -1,0 +1,54 @@
+/* Dark mode styles */
+body.dark-mode {
+	background: #181a1b !important;
+	color: #e0e0e0 !important;
+}
+.dark-mode .card-custom,
+.dark-mode .result-card {
+	background: #23272b !important;
+	color: #e0e0e0 !important;
+	border-color: #333a40 !important;
+}
+.dark-mode .card-title,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4 {
+	color: #7abaff !important;
+}
+.dark-mode .form-control,
+.dark-mode .form-select {
+	background: #23272b !important;
+	color: #e0e0e0 !important;
+	border-color: #333a40 !important;
+}
+.dark-mode .btn-primary {
+	background-color: #2563eb !important;
+	border-color: #2563eb !important;
+}
+.dark-mode .btn-primary:hover {
+	background-color: #1d4ed8 !important;
+}
+.dark-mode .result-item {
+	border-bottom: 1px solid #333a40 !important;
+}
+.dark-mode .tm-bg-gray {
+	background: #23272b !important;
+	color: #e0e0e0 !important;
+}
+
+.dark-mode .alert-danger {
+	background: #3a1a1a !important;
+	color: #ffb4b4 !important;
+}
+.no-gap {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.video-iframe {
+	border-radius: 12px 12px 0 0;
+	display: block;
+	margin-bottom: 0;
+}

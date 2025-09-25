@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!--page type is html -->
+<html lang="en"> <!--language is english -->
+
+<head>
+    <meta charset="UTF-8"> <!--بيدعم كل انواع الرموز -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--لتكون الصفحة مناسبة لحجم شاشة الموبايل مثلا-->
+    <title>MyCalories</title> <!--اسم الصفحة الي بيظهر فوق -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--مكتبة فيها ايقونات زي تاعت الانستا-->
+    <link rel="stylesheet" href="./about.css"><!--link the about page css file-->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--نوع الخط جبناه من جوجل-->
+    <link rel="stylesheet" href="../template/css/bootstrap.min.css">
+    <!--هدول من التيمبليت نفسو الها علاقة بترتيب الازرار وهيكل الصفحة-->
+    <link rel="stylesheet" href="../template/css/templatemo-video-catalog.css"><!--من التمبليت نفسو -->
+</head>
+
+<body class="page-bg"><!--اسم الكلاس -->
+    <div class="tm-page-wrap mx-auto"> <!--من20 ل 54  عشان الموقع يفتح عكل الاجهزة-->
+        <div class="position-relative">
+            <div class="position-absolute tm-site-header">
+                <div class="container-fluid position-relative">
+                    <div class="row">
+                        <div class="col-7 col-md-4"><!--تقسيم الصفحة ل اعمدة -->
+                        </div>
+                        <div class="col-5 col-md-8 ml-auto mr-0"><!--تقسيم الصفحة ل اعمدة -->
+                            <div class="tm-site-nav">
+                                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav"><!--القائمة بتتوسع وبتصغر حسب الجهاز  -->
+                                    <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed"
+                                        type="button" data-toggle="collapse" data-target="#navbar-nav"
+                                        aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation"><!--جاهزات من التمبليت الي حملناه-->
+                                        <span>
+                                            <i class="fas fa-bars tm-menu-closed-icon"></i><!--جاهزات من التمبليت الي حملناه-->
+                                            <i class="fas fa-times tm-menu-opened-icon"></i><!--جاهزات من التمبليت الي حملناه-->
+                                        </span>
+                                    </button>
+                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                                        <ul class="navbar-nav text-uppercase align-items-center">
+                                            <li class="nav-item"><!--الصفحات الموجودة بالشريط الي باعلى الشاشة-->
+                                                <a class="nav-link tm-nav-link" href="../home/home.html">Home</a><!--بربط صفحة الهووم-->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="../videos/video.html">Videos</a><!--بربط صفحة الفيديو-->
+                                            </li>
+                                            <li class="nav-item active"><!--الصفحة الي انا فيها حاليا لهيك هي active-->
+                                                <a class="nav-link tm-nav-link" href="about.html">About<span
+                                                        class="sr-only">(current)</span></a><!--الصفحة الي انا فيها هسا -->
+                                            </li>
+                                            <li class="nav-item"><!--زر لتغيير الثيم من ضوئي لداكن والعكس-->
+                                                <button id="theme-toggle" class="btn btn-link nav-link theme-toggle-btn"
+                                                 title="Toggle dark/light mode"><!--link to java & css file to do its function-->
+                                                    <span id="theme-toggle-icon" class="fas fa-moon"></span><!--ايقونة القمر والشمس-->
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-welcome-container text-center text-white"><!--font type & color for welcome page -->
+                <div class="tm-welcome-container-inner"> <!--بعطي الكلاس اسم عشان اقدر اعدل عليه بصفحة السي اس اس-->
+                    <p class="tm-welcome-text mb-1 text-white">About Health & Sports</p>
+                    
+                </div>
+            </div>
+
+
+            <div id="tm-video-container"> <!--من التمليت جاهز مالو دور واذا مسحناه الخلفية تصميمها بيخرب -->
+
+                <img src="../template/img/back img.jpg" alt=""> <!--صورة خلفية الصفحة -->
+            </div>
+        </div>
+        
+    <main class="container py-5"><!--المسافة من فوق و تحت -->
+        <section class="about-main-section"><!--اسم الكلاس عشان اقدر اعدل عليه بصفحة السي اس اس--><!--اذا حذفت السطر ببطل في مسافة من الجوانب-->
+            <h2>Latest studies related to health and sports</h2><!--عنوان رئيسي -->
+            <p>
+              Recent scientific evidence reinforces that regular physical activity is one of the most powerful tools we have for promoting health and longevity. International guidelines recommend at least 150 minutes per week of moderate-intensity aerobic activity, or 75 minutes per week of vigorous aerobic activity, along with two or more days of muscle-strengthening exercises. Meeting these thresholds significantly lowers the risk of cardiovascular disease, type 2 diabetes, certain cancers, and premature death.
+              </p>
+            <p>
+              Beyond just meeting minimum guidelines, accumulating more activity continues to yield further benefits. Large cohort studies show a nonlinear dose-response relationship: as daily step counts increase, mortality risk steadily declines up to about 8,000-10,000 steps per day, after which the benefit tends to plateau. Even more modest increases—from very low levels—are meaningful: for example, increasing from a sedentary baseline to walking a few thousand additional steps daily confers measurable health gains.</p>
+             <p> Age modifies these effects: while physical activity benefits people at all ages, the relative reduction in mortality risk is often larger in older populations. In studies including adults aged 20 to over 80, those meeting or exceeding activity recommendations had lower mortality, and the magnitude of risk reduction grew with age.</p>
+              <p>One especially relevant subgroup is adults with obesity (BMI ≥ 30). Meta-analyses of longitudinal data show that in this group, moderate to high levels of physical activity are associated with a ~21% lower risk of all-cause mortality and ~24% lower risk of cardiovascular mortality compared to those who are insufficiently active. Though evidence for reductions in cancer mortality in this group is less definitive, the trend is favorable.</p>
+              <p>These findings suggest several practical implications. Any movement helps – for people who are inactive, even small increments in activity (walking more, doing light aerobic or strength work) can improve health outcomes. Aim for consistency – it's better to spread activity through the week rather than concentrate all exercise into a single day, though “weekend warriors” still gain benefit. Intensity & strength matter – adding vigorous activity or strength training further enhances the benefits. Muscle-strengthening exercises help preserve muscle mass, support metabolic health, and reduce risks beyond what aerobic activity alone achieves. Public health & design matter – walkable environments (good sidewalks, mixed use neighborhoods, safe streets) are associated with higher population-level physical activity and can help people naturally integrate more movement into daily routines.</p>
+            
+        </section>
+    </main>
+
+        </div>
+
+
+        <script src="./about.js"></script><!--link java file to this page-->
+        <script src="../template/js/jquery-3.4.1.min.js"></script><!--ready library-->
+        <script src="../template/js/bootstrap.min.js"></script><!--bootstrap library-->
+
+</body>
+
+</html>
