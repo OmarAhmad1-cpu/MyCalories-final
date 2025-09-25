@@ -65,23 +65,31 @@ body.dark-mode {
   border-color: #333a40 !important;
 }
 
-/* ---- NAVBAR OVER HERO (مشترك لكل الصفحات) ---- */
+/* ---- NAVBAR OVER HERO ---- */
 .tm-site-header {
+  position: absolute; /* يضمن أن النافبار فوق الخلفية مباشرة */
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;                /* فوق كل العناصر */
-  background: rgba(0, 0, 0, 0.6); /* خلفية سوداء شفافة */
+  width: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6); /* خلفية سوداء شبه شفافة */
+  padding: 10px 0; /* مسافة داخلية صغيرة */
 }
+
 .tm-site-header .nav-link {
-  color: #fff !important;
+  color: white !important;
+  font-weight: 500;
 }
+
 .tm-site-header .nav-link:hover {
   color: #f1f1f1 !important;
 }
 
-/* لو في فراغ أبيض فوق، نتأكد أن الـ hero يبدأ من أعلى الصفحة */
+/* تأكد أن محتوى الهيرو يبدأ تحت النافبار */
 .tm-welcome-container {
   margin-top: 0 !important;
-  padding-top: 64px; /* مساحة تحت النافبار */
+  padding-top: 80px; /* تعويض ارتفاع النافبار */
 }
+
+
